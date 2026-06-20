@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🐾 Selamat Datang di Petshop</h1>
-    <p>Website ini di-deploy dengan Railway!</p>
+    <div class="container">
+        <h1>🐾 Selamat Datang di Petshop</h1>
+        <p>Temukan berbagai kebutuhan hewan peliharaan kesayanganmu!</p>
+        
+        <div class="pets">
+            <div class="pet">🐶 Anjing</div>
+            <div class="pet">🐱 Kucing</div>
+            <div class="pet">🐰 Kelinci</div>
+            <div class="pet">🐦 Burung</div>
+        </div>
+        
+        <button class="btn" onclick="tampilkanPesan()">Klik untuk Info</button>
+        <p id="pesan" style="margin-top: 20px; font-weight: bold;"></p>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
